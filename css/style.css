@@ -49,7 +49,8 @@ nav{
     align-items: center;
 }
 .container{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
 }
 .container .estatico{
     color: #cbdad5;
@@ -195,7 +196,7 @@ nav{
     color: #34344e;
     margin-bottom: 15px;
 }
-.container{
+.container-cards{
     width: 100%;
     display: flex;
     align-items: center;
@@ -220,95 +221,98 @@ nav{
     font-size: 14px;
     color: #34344e;
 }
+/* quarta sessão */
 .section-4{
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
-.org{
-    width: 90%;
-    height: 100%;
+.card-img{
+    width: 20%;
     display: flex;
-    flex-direction: row;
-    margin-top: 30vh;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh 2.5% 0 2.5%;
+    text-decoration: none;
 }
-.img > img{
-    width: 250px;
+.card-img > h2 {
+    color: #34344e;
+    margin: 10px 0;
+}
+.card-img > img {
     border-radius: 12px;
 }
-.txt{
+.card-img > p{
+    color: #34344e;
+    margin: 10px 0;
+}
+/* Quinta sessão */
+.section-5{
+    width: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 10vh 0 3vh 0;
 }
-.txt > h3{
+.section-5 > h2{
     color: #34344e;
-    font-size: 22px;
-    margin: 25px 0 5px 15px;
+    margin: 25px 0;
 }
-.txt > p{
-    color: #34344e;
-    font-size: 14px;
-    margin: 5px 15px 5px 15px;
-}
-.btn{
+.redes{
     width: 100%;
-    height: 30vh;
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: center;
 }
-.btn > a{
-    width: 100px;
-    height: 25px;
-    background-color: #34344e;
-    border-radius: 6px;
-    border: none;
+.contato-card{
+    margin: 0 15px;
     text-align: center;
     text-decoration: none;
-    color: #cbdad5;
-    padding-top: 2px;
-    transition: 0.3s;
+    color: #34344e;
+    cursor: pointer;
 }
-.btn > a:hover{
-    border-bottom: 3px solid #566981;
+.contato-card > i {
+    font-size: 30px;
+    margin-bottom: 5px;
 }
-.btn-e{
+footer{
     width: 100%;
-    height: 30vh;
-    display: flex;
-    margin-left: 3%;
-    align-items: flex-end;
-    justify-content: start;
-}
-.btn-e > a{
-    width: 100px;
     height: 25px;
-    background-color: #34344e;
-    border-radius: 6px;
-    border: none;
     text-align: center;
-    text-decoration: none;
-    color: #cbdad5;
-    padding-top: 2px;
-    transition: 0.3s;
+    padding-top: 5.5px;
+    background-color: #34344e;
 }
-.btn-e > a:hover{
-    border-bottom: 3px solid #566981;
-}
-.txt-e{
-    display: flex;
-    flex-direction: column;
-}
-.txt-e > h3{
-    color: #34344e;
-    font-size: 22px;
-    margin: 25px 0 5px 15px;
-}
-.txt-e > p{
-    color: #34344e;
+footer > p{
+    color: #fff;
     font-size: 14px;
-    margin: 0 50px 0 15px;
+}
+/* Responsive method tablet */
+@media (max-width: 1024px){
+    .container{
+        flex-direction: column;
+    }
+    .estatico{
+        text-align: center;
+    }
+    .container .dinamico{
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    .square{
+        width: 70%;
+    }
+    .square > i{
+        font-size: 100px;
+    }
+    .section-4{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .card-img{
+        width: 80%;
+        margin: 0;
+    }
 }
