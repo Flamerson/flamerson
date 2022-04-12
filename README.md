@@ -1,7 +1,7 @@
 ## Oiiii! Meu Nome é Flamerson 👋
 
 
-- Sou programador Fullstack - Javascript 😎
+- Sou programador Fullstack - Javascript/Java/Php 😎
 - Estou estudando Node.js e Typescript 💻
 - Gosto de Unity e Blender nas horas vagas 🎮
 
