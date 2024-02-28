@@ -1,4 +1,4 @@
-## Oiiii! Meu Nome é Flamerson 👋
+## Hiiii! My Name's Flamerson 👋
 
 
 - Software Developer FullStack Java - JavaScript 😎
